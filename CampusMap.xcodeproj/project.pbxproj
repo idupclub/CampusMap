@@ -12,6 +12,13 @@
 		342EBE0D21AC3BE500DB96CA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 342EBE0C21AC3BE500DB96CA /* Assets.xcassets */; };
 		342EBE1021AC3BE500DB96CA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 342EBE0E21AC3BE500DB96CA /* LaunchScreen.storyboard */; };
 		342EBE1821AC408D00DB96CA /* CampusViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 342EBE1721AC408D00DB96CA /* CampusViewController.swift */; };
+		34B639C021ACC910009562B8 /* Campus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34B639BF21ACC910009562B8 /* Campus.swift */; };
+		34B639C321ACCB2D009562B8 /* Campus.plist in Resources */ = {isa = PBXBuildFile; fileRef = 34B639C221ACCB2D009562B8 /* Campus.plist */; };
+		34B639C521ACCBFF009562B8 /* CampusMapOverlay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34B639C421ACCBFF009562B8 /* CampusMapOverlay.swift */; };
+		34B639C721ACCF92009562B8 /* MapOptionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34B639C621ACCF92009562B8 /* MapOptionsViewController.swift */; };
+		34B639CB21ACD224009562B8 /* CampusPOI.plist in Resources */ = {isa = PBXBuildFile; fileRef = 34B639CA21ACD224009562B8 /* CampusPOI.plist */; };
+		34B639CD21ACD325009562B8 /* POIAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34B639CC21ACD325009562B8 /* POIAnnotation.swift */; };
+		34B639CF21ACD3B5009562B8 /* POIAnnotationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34B639CE21ACD3B5009562B8 /* POIAnnotationView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +29,13 @@
 		342EBE0F21AC3BE500DB96CA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		342EBE1121AC3BE500DB96CA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		342EBE1721AC408D00DB96CA /* CampusViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CampusViewController.swift; sourceTree = "<group>"; };
+		34B639BF21ACC910009562B8 /* Campus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Campus.swift; sourceTree = "<group>"; };
+		34B639C221ACCB2D009562B8 /* Campus.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Campus.plist; sourceTree = "<group>"; };
+		34B639C421ACCBFF009562B8 /* CampusMapOverlay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CampusMapOverlay.swift; sourceTree = "<group>"; };
+		34B639C621ACCF92009562B8 /* MapOptionsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapOptionsViewController.swift; sourceTree = "<group>"; };
+		34B639CA21ACD224009562B8 /* CampusPOI.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = CampusPOI.plist; sourceTree = "<group>"; };
+		34B639CC21ACD325009562B8 /* POIAnnotation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = POIAnnotation.swift; sourceTree = "<group>"; };
+		34B639CE21ACD3B5009562B8 /* POIAnnotationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = POIAnnotationView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +68,29 @@
 		342EBE0421AC3BE400DB96CA /* CampusMap */ = {
 			isa = PBXGroup;
 			children = (
+				34B639C121ACCB16009562B8 /* Data */,
 				342EBE0521AC3BE400DB96CA /* AppDelegate.swift */,
 				342EBE0921AC3BE400DB96CA /* Main.storyboard */,
 				342EBE0C21AC3BE500DB96CA /* Assets.xcassets */,
 				342EBE0E21AC3BE500DB96CA /* LaunchScreen.storyboard */,
 				342EBE1121AC3BE500DB96CA /* Info.plist */,
 				342EBE1721AC408D00DB96CA /* CampusViewController.swift */,
+				34B639BF21ACC910009562B8 /* Campus.swift */,
+				34B639C421ACCBFF009562B8 /* CampusMapOverlay.swift */,
+				34B639C621ACCF92009562B8 /* MapOptionsViewController.swift */,
+				34B639CC21ACD325009562B8 /* POIAnnotation.swift */,
+				34B639CE21ACD3B5009562B8 /* POIAnnotationView.swift */,
 			);
 			path = CampusMap;
+			sourceTree = "<group>";
+		};
+		34B639C121ACCB16009562B8 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				34B639C221ACCB2D009562B8 /* Campus.plist */,
+				34B639CA21ACD224009562B8 /* CampusPOI.plist */,
+			);
+			path = Data;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -122,9 +151,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				34B639CB21ACD224009562B8 /* CampusPOI.plist in Resources */,
 				342EBE1021AC3BE500DB96CA /* LaunchScreen.storyboard in Resources */,
 				342EBE0D21AC3BE500DB96CA /* Assets.xcassets in Resources */,
 				342EBE0B21AC3BE400DB96CA /* Main.storyboard in Resources */,
+				34B639C321ACCB2D009562B8 /* Campus.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -135,8 +166,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				34B639CF21ACD3B5009562B8 /* POIAnnotationView.swift in Sources */,
 				342EBE0621AC3BE400DB96CA /* AppDelegate.swift in Sources */,
 				342EBE1821AC408D00DB96CA /* CampusViewController.swift in Sources */,
+				34B639C521ACCBFF009562B8 /* CampusMapOverlay.swift in Sources */,
+				34B639C721ACCF92009562B8 /* MapOptionsViewController.swift in Sources */,
+				34B639C021ACC910009562B8 /* Campus.swift in Sources */,
+				34B639CD21ACD325009562B8 /* POIAnnotation.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
